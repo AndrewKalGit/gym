@@ -41,7 +41,7 @@ return (
 
      <div class="flex-1 items-center lg:justify-end gap-4 flex justify-center lg:flex">
         <Link
-          class="hover:bg-white rounded-lg bg-gray-100 px-5 py-2 text-sm font-medium text-gray-500"
+          class="hover:bg-white rounded-lg bg-gray-100 px-5 py-2 text-sm font-medium text-gray-700"
           to="contact"
         >
             Contact

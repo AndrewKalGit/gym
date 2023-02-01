@@ -17,6 +17,8 @@ import Contact from './Contact';
 //drop down for schedule to show other locations
 //embedded iframe for google maps 
 //sign up confirmation 
+// production build for tailwind.css
+// production build for react.js
 
 function App() {
   
