@@ -1,8 +1,9 @@
 import React from 'react';
-import gloves from './img/gloves.jpg'
+import tkdimg1 from './img/tkdstock.jpg';
+
 function About(props) {
     return (
-<section>
+<section class="bg-gray-50 sm:bg-transparent sm:bg-gradient-to-r sm:from-gray-50 sm:to-gray-200">
   <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
       <div
@@ -10,7 +11,7 @@ function About(props) {
       >
         <img
           alt="Party"
-          src={gloves}
+          src={tkdimg1}
           class="absolute inset-0 h-full w-full object-cover"
         />
       </div> 

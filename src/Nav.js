@@ -18,20 +18,18 @@ function Nav(props) {
         aria-label="Site Nav"
         class="hidden gap-12 text-sm font-medium lg:flex"
       >
+        <Link class="text-gray-100 hover:underline" to="/">Home</Link>
         <Link class="text-gray-100 hover:underline" to="about">About</Link>
-        <Link class="text-gray-100 hover:underline" to="program">Program</Link>
+        <Link class="text-gray-100 hover:underline" to="program">Programs</Link>
         <Link class="text-gray-100 hover:underline" to="schedule">Schedule</Link>
-        <Link class="text-gray-100 hover:underline" to="membership">Membership</Link>
-        <Link class="text-gray-100 hover:underline" to="faq">FAQ</Link>
-        <Link class="text-gray-100 hover:underline" to="contact">Contact</Link>
       </nav>
 
      <div class="flex-1 items-center lg:justify-end gap-4 flex justify-center lg:flex">
         <Link
-          class="rounded-lg bg-gray-100 px-5 py-2 text-sm font-medium text-gray-500"
-          to="register"
+          class="hover:bg-white rounded-lg bg-gray-100 px-5 py-2 text-sm font-medium text-gray-500"
+          to="contact"
         >
-            Register
+            Contact
         </Link>
     </div>
 
