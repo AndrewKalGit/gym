@@ -1,0 +1,64 @@
+.Hamburger-Menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.Hamburger-Menuclicked {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hamburger-Menuunclicked {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nav-HamburgerContent {
+    display: none;
+}
+
+.Nav-HamburgerContentshow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(17, 24, 39);
+}
+
+.Nav-Links-Hambuger {
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .Hamburger-Menuunclicked {
+        display: none;
+    }
+
+    .Nav-HamburgerContentshow {
+        display: none;
+    }
+
+    .Hamburger-Menu {
+        display: none;
+    }
+
+    .Hamburger-Menuclicked {
+        display: none;
+    }
+
+    .Hamburger-Button {
+        display: none;
+    }
+}

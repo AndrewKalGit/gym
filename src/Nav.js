@@ -1,8 +1,23 @@
-import React from 'react';
+import {React, useState} from 'react';
 import { Link } from 'react-router-dom';
+import OutsideClickHandler from 'react-outside-click-handler';
+import './App.css';
 
 function Nav(props) {
-    return (
+
+const [hidden, setHidden] = useState(false);
+
+const close = () => {
+    setHidden(!hidden);
+}
+
+
+return (
+<>
+ <OutsideClickHandler
+							onOutsideClick={() => {
+								setHidden(false);
+							}}></OutsideClickHandler>
 <header aria-label="Site Header" class="shadow-sm">
   <div class="mx-auto max-w-screen p-4 bg-gray-900">
     <div class="flex items-center justify-between gap-4 lg:gap-10">
@@ -32,9 +47,8 @@ function Nav(props) {
             Contact
         </Link>
     </div>
-
       <div class="lg:hidden">
-        <button class="rounded-lg p-2 text-gray-600" type="button">
+        <button class="rounded-lg p-2 text-gray-600" type="button" onClick={close}>
           <span class="sr-only">Open menu</span>
           <svg
             aria-hidden="true"
@@ -56,6 +70,24 @@ function Nav(props) {
     </div>
   </div>
 </header>
+
+<div className={`Nav-HamburgerContent${hidden ? 'Nav-HamburgerContentshow' : ''}`}>
+						<div className='Nav-HamburgerContentshow'>
+						<Link className='Nav-Links-Hambuger' to='/'>
+							Home 
+						</Link>
+						<Link className='Nav-Links-Hambuger' to='/about'>
+							About
+						</Link>
+						<Link className='Nav-Links-Hambuger' to='/program'>
+							Programs
+						</Link>
+            <Link className='Nav-Links-Hambuger' to='/schedule'>
+							Schedule
+						</Link>
+					</div>
+        </div>
+</>
     );
 }
 

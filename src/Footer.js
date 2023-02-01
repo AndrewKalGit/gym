@@ -4,7 +4,7 @@ function Footer(props) {
 return (
 <footer aria-label="Site Footer" class="bg-white lg:grid lg:grid-cols-5">
   <div class="relative h-full lg:col-span-2 lg:h-full lg:flex">
-<iframe title="google maps" width="600" height="450" style={{border:0}} loading="lazy" allowfullscreen="" src={"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ4blltancw4kR0ZwQkSoA__s&key=" + process.env.REACT_APP_GYM_API_KEY}></iframe>
+<iframe title="google maps" class="w-full" width="450" height="450" style={{border:0}} loading="lazy" allowfullscreen="" src={"https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ4blltancw4kR0ZwQkSoA__s&key=" + process.env.REACT_APP_GYM_API_KEY}></iframe>
   </div>
 
   <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
