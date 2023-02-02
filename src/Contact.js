@@ -5,21 +5,16 @@ function Contact(props) {
     return (
 <>
 <section id="contact" class="bg-gray-100">
-  <h1 class="text-center h-4 pt-4 w-full text-4xl font-semibold text-gray-700"> Connect with us </h1>
-  <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-      <div class="lg:col-span-2 lg:py-12">
-        <h1 class="-mt-9 text-center sm:text-left sm:mt-0 max-w-xl text-2xl mb-2 font-semibold text-gray-700"> Get in touch </h1>
-        <p class="max-w-xl text-lg text-center sm:text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquam quos eligendi expedita esse exercitationem incidunt, in sint consectetur rerum, vitae obcaecati neque quod, cupiditate animi? Cupiditate quasi voluptatem ab.
-        </p>
-
-        <div class="mt-8">
-          <a href="tel:+17325158724" class="text-2xl font-bold text-gray-700 hover:opacity-75">
+  <h1 class="mb-16 sm:mb-2 text-center h-2 pt-4 w-full text-4xl font-semibold text-gray-700"> Connect with us </h1>
+  <div class="mx-auto max-w-screen-xl px-4 pb-12 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-x-16 gap-y-8">
+      <div class="lg:col-span-2">
+        <div class="flex justify-center mb-4">
+          <a href="tel:+17325158724" class="text-2xl font-bold text-gray-700 hover:opacity-75 sm:hidden">
             (732) 515 8724
           </a>
         </div>
-          <a href="mailto:echowebllc@gmail.com" class="text-2xl font-bold text-gray-700 hover:opacity-75">
+          <a href="mailto:echowebllc@gmail.com" class="text-2xl font-bold text-gray-700 hover:opacity-75 sm:hidden flex justify-center">
             gymLLC@gmail.com
           </a>
         <div class="flex mt-4">

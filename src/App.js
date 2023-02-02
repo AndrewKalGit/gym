@@ -19,6 +19,7 @@ import Contact from './Contact';
 //sign up confirmation 
 // production build for tailwind.css
 // production build for react.js
+// fix the padding on contact and the alignment of texts
 
 function App() {
   
